@@ -1,20 +1,16 @@
-variable "vpc_name" {
-  type    = string
-  default = "ntier"
-
-}
 variable "region" {
   type    = string
-  default = "us-east-1"
+  default = "ap-south-1"
+
 
 }
-variable "vpc_cidr" {
+variable "vpc_cdir" {
   type    = string
   default = "10.100.0.0/16"
 
 }
 variable "subnet_names" {
   type    = list(string)
-  default = ["web", "app", "date"]
+  default = ["web", "data", "app"]
 
 }
